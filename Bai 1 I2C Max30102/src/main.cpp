@@ -4,9 +4,6 @@
 
 MAX30105 particleSensor;
 long lastBeat = 0;
-float currentBPM = 0;
-unsigned long lastDisplay = 0;
-bool fingerDetected = false;
 void setup() {
     Serial.begin(9600);
     
@@ -18,7 +15,7 @@ void setup() {
     particleSensor.setup();
     particleSensor.setPulseAmplitudeRed(0x0A);
     
-    Serial.println("MAX30102 - Cảm biến nhịp tim");
+    Serial.println("MAX30102 - Bắt đầu đọc");
 }
 
 void loop() {

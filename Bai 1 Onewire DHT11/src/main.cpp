@@ -9,7 +9,7 @@ void setup()
 {
     delay(2000);
     Serial.begin(9600);
-    Serial.println(F("DHT11 - Cảm biến nhiệt độ - độ ẩm"));
+    Serial.println(F("DHT11 - Bắt đầu đọc"));
     dht.begin();    
 }
 
